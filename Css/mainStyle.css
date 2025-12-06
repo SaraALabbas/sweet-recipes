@@ -1,0 +1,251 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #fff5f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  .list_icon{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .list_icon  .fa-bars{
+    width: 40px;
+    height: 8px;
+    font-size: 30px;
+    
+  }
+  
+  
+  .main-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+  }
+  
+  .main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .main-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .search-bar input {
+    padding: 10px 15px;
+    border: 2px solid #6b3e45;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 250px;
+    height: 25px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: #6b3e45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #a9747e;
+  }
+  
+  .categories,
+  .suggested {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .categories h2,
+  .suggested h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #6b3e45;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    width: 280px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #6b3e45;
+  }
+  .card a {
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+  .suggested .card{
+    min-height: 50vh;
+  }
+  
+  .featured {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .featured h2 {
+    font-size: 2rem;
+    color: #6b3e45;
+    margin-bottom: 30px;
+  }
+  
+  .recipe-of-the-day {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .recipe-of-the-day img {
+    width: 350px;
+    border-radius: 15px;
+  }
+  
+  .recipe-of-the-day div {
+    max-width: 400px;
+    text-align: right;
+  }
+  
+  .recipe-of-the-day h3 {
+    font-size: 1.5rem;
+    color: #6b3e45;
+  }
+  
+  .recipe-of-the-day p {
+    margin: 10px 0 20px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .recipe-of-the-day a,
+  .card a {
+    padding: 10px 20px;
+    background-color: #6b3e45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .recipe-of-the-day a:hover {
+    background-color: #a9747e;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 768px) {
+    .main-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .main-header p {
+      font-size: 1.2rem;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-bar input, .search-bar button {
+      width: 90%;
+    }
+  
+     .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .card {
+      width: 90%;
+      margin: auto;
+    } 
+    .categories h2{
+      font-size: 2.3rem;
+    }
+    .categories .card img {
+      width: 100%;
+      height: 350px;
+    }
+    .suggested .card{
+      height: 65vh;
+    }
+    .suggested .card img{
+      width: 100%;
+      height: 340px;
+    }
+
+    .cards h3{
+      font-size: 2.1rem;
+      margin-top: 3px;
+
+    }
+  
+  
+    .recipe-of-the-day {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .recipe-of-the-day img {
+      width: 90%;
+      height: auto;
+    }
+  
+    
+  }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اكتشفي الوصفات</title>
+  <link rel="stylesheet" href="../Css/mainStyle.css" />
+  <link rel="stylesheet" href="../Css/CommonStyle.css" />
+
+  <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/css/all.min.css">
+
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>مرحباً بك في عالم الحلويات!</h1>
+    <p>اختاري نوع الوصفات يلي حابة تجربيها اليوم</p>
+    <div class="search-bar">
+        <input type="text" placeholder="ابحثي عن وصفة...">
+        <button>بحث</button>
+      </div>
+      <div class="list_icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+      <div class="side-menu">
+        <ul class="menu-items">
+          <li class="home-link">
+            <a href="#">الصفحة الرئيسية</a>
+          </li>
+      
+          <li class="menu-item">
+            <div class="item-header" onclick="toggleSubMenu(1)">
+              <img src="../Images/حلويات باردة/باردة1.jpg" alt="حلويات باردة" />
+              <span class="item-name">حلويات باردة</span>
+              <span class="plus-icon" id="icon-1">+</span>
+            </div>
+            <ul class="sub-menu" id="submenu-1">
+              <li><a href="./Cold Desserts.html#sweet_1">سوكسيه</a></li>
+          <li><a href="./Cold Desserts.html#sweet_2">كاستر</a></li>
+          <li><a href="./Cold Desserts.html#sweet_3">البانا كوتا بلوبيري</a></li>
+          <li><a href="./Cold Desserts.html#sweet_4">المهلبية</a></li>
+          <li><a href="./Cold Desserts.html#sweet_5">تيراميسو</a></li>
+          
+
+
+            </ul>
+          </li>
+
+          
+          <li class="menu-item">
+            <div class="item-header" onclick="toggleSubMenu(2)">
+              <img src="../Images/كيك/كيك1.jpg" alt="كيك" />
+              <span class="item-name">حلويات الكيك</span>
+              <span class="plus-icon" id="icon-2">+</span>
+            </div>
+            <ul class="sub-menu" id="submenu-2">
+              <li><a href="./Cake.html#cake_1">كيكة البستاشيو</a></li>
+              <li><a href="./Cake.html#cake_2">كيكة السميد مع جوز الهند</a></li>
+              <li><a href="./Cake.html#cake_3">كيكة الفرولة مع الكريمة</a></li>
+              <li><a href="./Cake.html#cake_4">كيكة اللوتس</a></li>
+              <li><a href="./Cake.html#cake_5"> كيكة الشوكولا</a></li>
+              <li><a href="./Cake.html#cake_6">كب كيك الشوكلاتة</a></li>
+              <li><a href="./Cake.html#cake_7">كيكة التفاح مع القرفة</a></li>
+
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="item-header" onclick="toggleSubMenu(3)">
+              <img src="../Images/حلويات شرقية/شرقية1.jpg" alt="حلويات شرقية" />
+              <span class="item-name">حلويات شرقية</span>
+              <span class="plus-icon" id="icon-3">+</span>
+            </div>
+            <ul class="sub-menu" id="submenu-3">
+              <li><a href="./EasternDesserts.html#east_1">الهريسة بالمكسرات</a></li>
+              <li><a href="./EasternDesserts.html#east_2">البقلاوة</a></li>
+              <li><a href="./EasternDesserts.html#east_3">بلح الشام بالكريمة</a></li>
+              <li><a href="./EasternDesserts.html#east_4">المبرومة بالفستق الحلبي</a></li>
+              <li><a href="./EasternDesserts.html#east_5">العوامة الدمشقية</a></li>
+              <li><a href="./EasternDesserts.html#east_6">قطايف بالقشطة</a></li>
+              <li><a href="./EasternDesserts.html#east_7">كنافة رولز بالجبنة</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item">
+            <div class="item-header" onclick="toggleSubMenu(4)">
+              <img src="../Images/حلويات  إيطالية/ايطالية3.jpg" alt="حلويات إيطالية" />
+              <span class="item-name">حلويات إيطالية</span>
+              <span class="plus-icon" id="icon-4">+</span>
+            </div>
+            <ul class="sub-menu" id="submenu-4">
+              <li><a href="./ItalyDesserts.html#italy_1">كب كنافه بكيك التيراميسو الإيطالية</a></li>
+              <li><a href="./ItalyDesserts.html#italy_2">حلوى اليويو الإيطالية</a></li>
+              <li><a href="./ItalyDesserts.html#italy_3">باستا فلورا</a></li>
+              <li><a href="./ItalyDesserts.html#italy_4">كب كيك بالمرانغ الايطالية</a></li>
+              <li><a href="./ItalyDesserts.html#italy_5">بسكويت الكانتوشي الايطالي بالشوكولاتة</a></li>
+              <li><a href="./ItalyDesserts.html#italy_6">شارلوت بالفريز</a></li>
+              <li><a href="./ItalyDesserts.html#italy_7">البفاريا</a></li>
+            </ul>
+          </li>
+          <li class="tips-link">
+            <a href="./Tips.html">نصائح المطبخ</a>
+          </li>
+        </ul>
+      </div>
+
+  <section class="categories">
+    <h2>التصنيفات</h2>
+    <div class="cards">
+      <a href="./Cold Desserts.html" class="card">
+        <img src="../Images/حلويات باردة/باردة1.jpg" alt="حلويات باردة">
+        <h3>حلويات باردة</h3>
+      </a>
+      <a href="./Cake.html" class="card">
+        <img src="../Images/كيك/كيك1.jpg" alt="كيك">
+        <h3>وصفات كيك</h3>
+      </a>
+      <a href="./EasternDesserts.html" class="card">
+        <img src="../Images/حلويات شرقية/شرقية2.jpg" alt="حلويات شرقية">
+        <h3> حلويات شرقية</h3>
+      </a>
+      <a href="./ItalyDesserts.html" class="card">
+        <img src="../Images/حلويات  إيطالية/ايطالية3.jpg" alt="حلويات إيطالية">
+        <h3> حلويات إيطالية</h3>
+      </a>
+    </div>
+  </section>
+  <section class="suggested">
+    <h2>وصفات مقترحة</h2>
+    <div class="cards">
+      <div class="card ">
+        <img src="../Images/حلويات باردة/باردة3.jpg" alt="السوكسيه">
+        <h3> السوكسيه</h3>
+        <a href="./Cold Desserts.html#sweet_1 ">شاهدي الوصفة</a>
+      </div>
+      <div class="card">
+        <img src="../Images/كيك/كيك2.jpg" alt="كيكة السميد مع جوز الهند">
+        <h3>  كيكة السميد مع جوز الهند</h3>
+        <a href="./Cake.html#cake_2">شاهدي الوصفة</a>
+      </div>
+      <div class="card">
+        <img src="../Images/حلويات شرقية/شرقية4.jpg" alt="البقلاوة">
+        <h3>  البقلاوة</h3>
+        <a href="./EasternDesserts.html#east_2">شاهدي الوصفة</a>
+      </div>
+      <div class="card">
+        <img src="../Images/حلويات  إيطالية/ايطالية6.jpg" alt="شارلوت بالفريز">
+        <h3>  شارلوت بالفريز</h3>
+        <a href="./ItalyDesserts.html#italy_6">شاهدي الوصفة</a>
+      </div>
+    </div>
+  </section>
+  <section class="featured">
+    <h2>وصفة اليوم</h2>
+    <div class="recipe-of-the-day">
+      <img src="../Images/حلويات باردة/باردة4.jpg" alt="وصفة اليوم">
+      <div>
+        <h3>البانا كوتا بلوبيري</h3>
+        <p>وصفة منعشة وسهلة بدون فرن، مثالية لأيام الصيف!</p>
+        <a href="Cold Desserts.html#sweet_3 ">شاهدي الوصفة</a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 عالم الوصفات
+  </footer>
+  <script src="../js/mainJS.js"></script>
+</body>
+
+</html>

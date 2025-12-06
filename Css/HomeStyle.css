@@ -1,0 +1,104 @@
+.hero_section {
+    background-color: #fff0f5; /* خلفية وردية ناعمة */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero_section h1 i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero_section h2 {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.hero_section h2 i {
+    color: #d68188;
+    margin-left: 10px;
+    font-size: 1.6rem;
+}
+
+/* الزر */
+.hero_btn {
+    background-color: #6b3e45;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero_btn:hover {
+    background-color: #a9747e;
+    transform: scale(1.05);
+}
+.icon-left {
+    margin-left: 10px; 
+    color: #6b3e45;
+    font-size: 1.6rem;
+}
+
+/* تأثير دخول ناعم */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+/* تصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .hero_section h1 i {
+        font-size: 2rem;
+    }
+
+    .hero_section h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero_section h2 i {
+        font-size: 1.2rem;
+    }
+
+    .hero_btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_section {
+        padding: 10px;
+    }
+
+    .hero_section h1 i {
+        font-size: 1.6rem;
+    }
+
+    .hero_section h2 {
+        font-size: 1rem;
+    }
+
+    .hero_section h2 i {
+        font-size: 1rem;
+    }
+
+    .hero_btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
